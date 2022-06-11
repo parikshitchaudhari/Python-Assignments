@@ -1,0 +1,20 @@
+a=input()
+if len(a)>1:
+            
+    b=list(a.strip())
+    d=len(a)//2
+    z=1
+    for i in range(len(a)):
+        c=a[0:d]
+        e=a.count(c)
+        if e==(len(a)/len(c)):
+            z=2
+            return 1
+            break
+        d-=1
+        if d==0:
+            break
+    if z!=2:
+        return 0
+else:
+    return 0
