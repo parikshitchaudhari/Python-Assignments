@@ -1,0 +1,15 @@
+n=int(input())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+
+c=0
+while len(a)>0:   
+    if a[0]==b[0]:
+        a.pop(0)
+        b.pop(0)
+        c+=1
+    else:
+        x=a.pop(0)
+        a.append(x)
+        c+=1
+print(c)
