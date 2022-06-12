@@ -25,4 +25,4 @@ if b!=b[::-1] and len(a)>1 and len(y)>1:
         if b==b[::-1]:
             break
 z=''.join(b)
-print(len(z))
+print(z)
