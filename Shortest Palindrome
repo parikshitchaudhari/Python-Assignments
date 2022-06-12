@@ -1,0 +1,34 @@
+#You are given a string s. You can convert s to a palindrome by adding characters in front of it.
+#Return the shortest palindrome you can find by performing this transformation.
+
+#Example 1:
+#Input: s = "aacecaaa"
+#Output: "aaacecaaa"
+
+#Example 2:
+#Input: s = "abcd"
+#Output: "dcbabcd"
+ 
+#Constraints:
+#0 <= s.length <= 5 * 104
+#s consists of lowercase English letters only.
+
+------------------------------------------code-------------------------------------------------
+a=input()
+print(len(a))
+y=set(a)
+print(y)
+count=0
+if len(a)>1 and len(y)>1:  
+    b=list(a.strip())    
+    if b!=b[::-1]:  
+        for i in b[::-1]:
+            b.insert(count,i)
+            count+=1
+            if b==b[::-1]:
+                break
+if count>0:
+    z=''.join(b)
+    print(len(z))
+else:
+    print(a)
