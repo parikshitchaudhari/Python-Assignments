@@ -20,8 +20,7 @@ s consists of lowercase English letters.
 
 ----------------------------------------------------CODE----------------------------------------------------
 a=input()
-if len(a)>1:
-            
+if len(a)>1:            
     b=list(a.strip())
     d=len(a)//2
     z=1
@@ -30,12 +29,12 @@ if len(a)>1:
         e=a.count(c)
         if e==(len(a)/len(c)):
             z=2
-            return 1
+            print('true')
             break
         d-=1
         if d==0:
             break
     if z!=2:
-        return 0
+        print('false')
 else:
-    return 0
+    print('false')
