@@ -15,20 +15,14 @@
 
 ------------------------------------------code-------------------------------------------------
 a=input()
-print(len(a))
 y=set(a)
-print(y)
 count=0
-if len(a)>1 and len(y)>1:  
-    b=list(a.strip())    
-    if b!=b[::-1]:  
-        for i in b[::-1]:
-            b.insert(count,i)
-            count+=1
-            if b==b[::-1]:
-                break
-if count>0:
-    z=''.join(b)
-    print(len(z))
-else:
-    print(a)
+b=list(a.strip())    
+if b!=b[::-1] and len(a)>1 and len(y)>1:  
+    for i in b[::-1]:
+        b.insert(count,i)
+        count+=1
+        if b==b[::-1]:
+            break
+z=''.join(b)
+print(len(z))
