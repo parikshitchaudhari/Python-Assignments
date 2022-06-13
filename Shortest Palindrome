@@ -15,10 +15,9 @@
 
 ------------------------------------------code-------------------------------------------------
 a=input()
-y=set(a)
 count=0
 b=list(a.strip())    
-if b!=b[::-1] and len(a)>1 and len(y)>1:  
+if b!=b[::-1] :  
     for i in b[::-1]:
         b.insert(count,i)
         count+=1
